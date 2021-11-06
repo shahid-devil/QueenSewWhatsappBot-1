@@ -35,7 +35,7 @@ const Language = require('./language');
 const Lang = Language.getString('updater');
 
 // Sql
-const SewQueenDB = Raviya.DATABASE.define('QueenSewNew', {
+const SewQueenDB = Raviya.DATABASE.define('QueenSewWhatsappBot', {
     info: {
       type: DataTypes.STRING,
       allowNull: false
@@ -238,7 +238,7 @@ async function sewQueen () {
     }
     CdSew.on('open', async () => {
         console.log(
-            chalk.blueBright.italic('🚀 🅻🅾🅶🅸🅽 🅸🅽🅵🅾🆁🅼🅰🆃🅸🅾🅽 🆄🅿🅳🅰🆃🅴🅳🎲!')
+            chalk.blueBright.italic('🚀 Login Information Updated!')
         );
         const authInfo = CdSew.base64EncodedAuthInfo();
         if (StrSes_Db.length < 1) {
@@ -250,11 +250,11 @@ async function sewQueen () {
     CdSew.on('connecting', async () => {
         console.log(`${chalk.green.bold('Queen')}${chalk.blue.bold('Sew')}
 ${chalk.white.bold('Version:')} ${chalk.red.bold(Raviya.VERSION)}
-${chalk.blue.italic('🇱🇰 🆃🆁🆈 🆃🅾 🅻🅾🅶🅸🅽 🆆🅷🅰🆃🆂🅰🅿🅿... 🅿🅻🅴🅰🆂🅴 🆆🅰🅸🆃...')}`);
+${chalk.blue.italic('🇱🇰 Try To Login WhatsApp... Please Wait...')}`);
     });
     CdSew.on('credentials-updated', async () => {
         console.log(
-            chalk.green.bold('⚛ 🅻🅾🅶🅸🅽 🆂🆄🅲🅲🅴🆂🆂🅵🆄🅻 !')
+            chalk.green.bold('⚛ Login successful!')
         );
         console.log(
             chalk.blueBright.italic('✧✧ Installing External Commands...')
