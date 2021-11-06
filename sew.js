@@ -238,7 +238,7 @@ async function sewQueen () {
     }
     CdSew.on('open', async () => {
         console.log(
-            chalk.blueBright.italic('🚀 🅻🅾🅶🅸🅽 🅸🅽🅵🅾🆁🅼🅰🆃🅸🅾🅽 🆄🅿🅳🅰🆃🅴🅳!')
+            chalk.blueBright.italic('🚀 🅻🅾🅶🅸🅽 🅸🅽🅵🅾🆁🅼🅰🆃🅸🅾🅽 🆄🅿🅳🅰🆃🅴🅳🎲!')
         );
         const authInfo = CdSew.base64EncodedAuthInfo();
         if (StrSes_Db.length < 1) {
